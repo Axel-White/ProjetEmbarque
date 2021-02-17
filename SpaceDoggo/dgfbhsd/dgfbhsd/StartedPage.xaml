@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dgfbhsd.StartedPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Let's Play !" HorizontalTextAlignment="Center" TextColor="DarkOrange" FontSize="36"/>
+
+        </Frame>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label HorizontalTextAlignment="Center" FontSize="36" x:Name="turnLabel"></Label>
+        </Frame>
+        <Label HorizontalTextAlignment="Center" FontSize="30" x:Name="playerLabel"></Label>
+        <Image Source="waterfront.jpg" />
+        <Button Text="Win" Padding="30,10,30,10" TextColor="CornflowerBlue" Clicked="win"/>
+        <Button Text="Failed" Padding="30,10,30,10" TextColor="Red" Clicked="fail"/>
+    </StackLayout>
+</ContentPage>

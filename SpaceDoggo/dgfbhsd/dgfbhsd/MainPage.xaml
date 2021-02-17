@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dgfbhsd.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Space Paper Jam !" HorizontalTextAlignment="Center" TextColor="DarkOrange" FontSize="36"/>
+        </Frame>
+        <Button x:Name="BTButt" Text="Connect Bluetooth" Padding="30,10,30,10"  Clicked="ConnectBluetooth"/>
+        <Button Text="Add players" Padding="30,10,30,10"  Clicked="AddPlayers"/>
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Players" x:Name="tablesection">
+                    <EntryCell Placeholder="Enter Players Name"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Start Game" Padding="30,10,30,10" Clicked="startGame"/>
+    </StackLayout>
+
+</ContentPage>
